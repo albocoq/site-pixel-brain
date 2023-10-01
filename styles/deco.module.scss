@@ -1,0 +1,46 @@
+.imgTop {
+    width: 40%;
+    transform: translateY(0);
+    animation: enterTop 1s ease-in-out;
+}
+@keyframes enterTop {
+    0% {
+        transform: translateY(-200px) rotate(30deg);
+    } 
+    100% {
+        transform: translateY(0);
+    }
+}
+.imgBot {
+    width: 40%;
+    transform: translateY(0);
+    animation: enterbot 1s ease-in-out;
+}
+@keyframes enterbot {
+    0% {
+        transform: translateY(200px) rotate(30deg);
+    } 
+    100% {
+        transform: translateY(0);
+    }
+}
+.horizontal {
+    writing-mode: vertical-rl;
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .imgBot, .imgTop {
+        width: 70%;
+    }
+    .imgBot {
+        right: -70px;
+    }
+    .horizontal {
+        display: none;
+    }
+}

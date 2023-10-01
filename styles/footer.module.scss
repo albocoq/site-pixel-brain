@@ -1,0 +1,17 @@
+.footer {
+    p {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        font-size: 12.5px;
+        p {
+            display: block;
+        }
+    }
+}
